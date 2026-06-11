@@ -1,0 +1,179 @@
+{
+  "scene_aliases": {
+    "browse": "browser",
+    "browser": "browser",
+    "web": "browser",
+    "browsing": "browser",
+    "browser_access": "browser",
+    "browse_without_vpn": "browser",
+    "browse_no_proxy": "browser",
+    "browse_proxy": "browser",
+    "video": "video",
+    "tiktok": "video",
+    "qqmusic": "video",
+    "music": "video",
+    "rednotes": "social",
+    "xiaohongshu": "social",
+    "social": "social",
+    "pinduoduo": "shopping",
+    "shopping": "shopping",
+    "map": "map",
+    "cloud": "cloud",
+    "cloud_service": "cloud",
+    "netdisk": "cloud",
+    "download": "download",
+    "chat": "chat",
+    "im": "chat",
+    "instant_message": "chat",
+    "qq": "chat"
+  },
+  "app_aliases": {
+    "browse": "browser",
+    "browse_without_vpn": "browser",
+    "browse_no_proxy": "browser",
+    "browse_proxy": "browser_proxy",
+    "pinduoduo": "pinduoduo",
+    "qq": "qq",
+    "qqmusic": "qqmusic",
+    "rednotes": "rednotes",
+    "tiktok": "tiktok",
+    "chat": "chat",
+    "cloud": "cloud",
+    "download": "download",
+    "video": "video"
+  },
+  "label_space": [
+    "browser",
+    "chat",
+    "cloud",
+    "download",
+    "shopping",
+    "social",
+    "video"
+  ],
+  "environment_values": [
+    "direct",
+    "proxy",
+    "vpn"
+  ],
+  "platform_values": [
+    "mobile",
+    "pc"
+  ],
+  "background_domain_hints": [
+    "ecs.office.com",
+    "office.com",
+    "office.net",
+    "microsoft.com",
+    "windowsupdate",
+    "update.microsoft",
+    "teams.microsoft",
+    "onedrive",
+    "sharepoint.com",
+    "msftconnecttest",
+    "msftncsi",
+    "live.com",
+    "bingapis.com",
+    "apple.com",
+    "icloud.com",
+    "push.apple.com",
+    "gvt1.com",
+    "googleapis.com",
+    "gstatic.com",
+    "mozilla.com",
+    "firefox.com"
+  ],
+  "target_domain_hints": {
+    "pinduoduo": [
+      "pinduoduo",
+      "yangkeduo",
+      "pdd",
+      "pddpic",
+      "pddcdn"
+    ],
+    "qq": [
+      "qq.com",
+      "tencent",
+      "qlogo",
+      "gtimg",
+      "myqcloud"
+    ],
+    "qqmusic": [
+      "music.qq",
+      "y.qq",
+      "qqmusic",
+      "tencentmusic",
+      "gtimg",
+      "qq.com"
+    ],
+    "rednotes": [
+      "xiaohongshu",
+      "xhscdn",
+      "xhs",
+      "rednote"
+    ],
+    "tiktok": [
+      "tiktok",
+      "byteoversea",
+      "bytecdn",
+      "ibytedtos",
+      "muscdn",
+      "ttwstatic"
+    ],
+    "browser": [
+      "baidu",
+      "bing",
+      "google",
+      "sogou",
+      "edge",
+      "msn",
+      "github",
+      "wikipedia"
+    ],
+    "browser_proxy": [
+      "baidu",
+      "bing",
+      "google",
+      "sogou",
+      "edge",
+      "msn",
+      "github",
+      "wikipedia"
+    ],
+    "chat": [
+      "qq.com",
+      "weixin",
+      "wechat",
+      "tencent",
+      "wx.",
+      "wxapp"
+    ],
+    "cloud": [
+      "aliyun",
+      "baidu",
+      "pan.baidu",
+      "cloud",
+      "onedrive",
+      "sharepoint"
+    ],
+    "download": [
+      "download",
+      "dl.",
+      "cdn",
+      "update",
+      "mirror",
+      "pkg",
+      "steam",
+      "microsoft"
+    ],
+    "video": [
+      "video",
+      "bilibili",
+      "douyin",
+      "iqiyi",
+      "youku",
+      "qq.com",
+      "tencentvideo"
+    ]
+  }
+}
