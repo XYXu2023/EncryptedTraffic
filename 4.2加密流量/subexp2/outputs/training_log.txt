@@ -1,0 +1,4 @@
+train_rows=1575
+val_rows=403
+random_forest: train_seconds=3.878364, val_accuracy=0.2010, val_macro_f1=0.2620, model=outputs\models\random_forest.pkl
+logistic_regression: train_seconds=11.499594, val_accuracy=0.1687, val_macro_f1=0.1608, model=outputs\models\logistic_regression.pkl
