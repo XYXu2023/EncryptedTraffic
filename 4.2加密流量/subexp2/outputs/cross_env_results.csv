@@ -1,0 +1,5 @@
+﻿accuracy,experiment,f1_macro,f1_weighted,notes,test_flows,train_flows
+0.5015337423312883,direct_train_direct_test,0.4534104161221674,0.5167992813021266,,652,1453
+0.2786885245901639,direct_train_proxy_test,0.062271062271062265,0.43589743589743585,,122,1453
+,direct_train_vpn_test,,,insufficient labels or test rows,0,1453
+0.5291411042944786,mixed_train_mixed_test,0.48158481663717734,0.5365138534846178,,652,1575
