@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>在线流量检测系统</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>在线流量检测系统</h1>
+      <p>实时抓包 · 会话重组 · 流式特征 · 在线分类 · 告警</p>
+    </div>
+    <div class="actions">
+      <select id="mode">
+        <option value="replay">Replay 演示</option>
+        <option value="live">Live 抓包</option>
+      </select>
+      <input id="iface" placeholder="网卡名，可留空">
+      <button id="startBtn">开始</button>
+      <button id="stopBtn">停止</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="metrics">
+      <div class="metric"><span>运行状态</span><strong id="status">-</strong></div>
+      <div class="metric"><span>活跃 Flow</span><strong id="activeFlows">0</strong></div>
+      <div class="metric"><span>已处理包</span><strong id="packets">0</strong></div>
+      <div class="metric"><span>模型状态</span><strong id="model">-</strong></div>
+    </section>
+
+    <section class="grid">
+      <div class="panel chart-panel">
+        <h2>分类占比</h2>
+        <div class="chart-frame">
+          <canvas id="compositionChart"></canvas>
+        </div>
+      </div>
+      <div class="panel chart-panel">
+        <h2>协议与端口</h2>
+        <div class="chart-frame">
+          <canvas id="portChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>最近预测</h2>
+      <table>
+        <thead>
+          <tr><th>Flow ID</th><th>源</th><th>目的</th><th>协议</th><th>包数</th><th>分类</th><th>置信度</th></tr>
+        </thead>
+        <tbody id="predictionRows"></tbody>
+      </table>
+    </section>
+
+    <section class="panel alert-panel">
+      <h2>可疑流量告警</h2>
+      <div id="alerts"></div>
+    </section>
+  </main>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
